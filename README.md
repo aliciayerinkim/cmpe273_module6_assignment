@@ -71,16 +71,7 @@ Note for Git Bash on Windows: Git Bash changes paths like `/tmp/not-ready` into 
 
 ## Architecture
 
-```mermaid
-flowchart LR
-    C[client pod] --> S[inventory Service<br/>ClusterIP :8080]
-    subgraph D[inventory Deployment]
-        P1[inventory pod 1]
-        P2[inventory pod 2]
-    end
-    S --> P1
-    S --> P2
-```
+<img width="1800" height="680" alt="architecture (1)" src="https://github.com/user-attachments/assets/57031ebf-fa9d-4701-8c1b-d329cb73943b" />
 
 ## Evidence 1: Both replicas receive requests
 
